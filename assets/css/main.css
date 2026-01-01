@@ -844,14 +844,14 @@ section,
 }
 
 .hero .container {
-  background: color-mix(in srgb, var(--surface-color), transparent 10%);
+  /* background: color-mix(in srgb, var(--surface-color), transparent 10%); */
   position: relative;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
-  border-top: 4px solid var(--accent-color);
-  z-index: 3;
+  /* border-top: 4px solid var(--accent-color); */
+  z-index: 4;
 }
 
 @media (max-width: 1200px) {
