@@ -844,6 +844,27 @@ section,
   z-index: 1;
 }
 
+/* Hide mobile images by default */
+.hero img.mobile-only {
+  display: none;
+}
+
+/* Show desktop images by default */
+.hero img.desktop-only {
+  display: block;
+}
+
+/* On mobile: hide desktop, show mobile */
+@media (max-width: 768px) {
+  .hero img.desktop-only {
+    display: none;
+  }
+
+  .hero img.mobile-only {
+    display: block;
+  }
+}
+
 .hero .carousel-item {
   position: absolute;
   inset: 0;
@@ -862,7 +883,6 @@ section,
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
-  /* border-top: 4px solid var(--accent-color); */
   z-index: 4;
 }
 
